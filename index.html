@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXT Eyewear</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>NE<span>X</span>T</h1>
+
+<button onclick="toggleCart()">🛒 <span id="cart-count">0</span></button>
+</header>
+
+<!-- تجربة الكاميرا -->
+<section class="hero">
+<h2>جرب النظارة على وشك 😎</h2>
+<button onclick="openCamera()">تشغيل الكاميرا</button>
+
+<div class="camera-box">
+<video id="video" autoplay></video>
+<img id="glasses" src="https://i.imgur.com/3QZ7Z9U.png">
+</div>
+</section>
+
+<!-- منتجات -->
+<section>
+<h3>نظارة شمس</h3>
+<button onclick="addToCart('نظارة شمس',1000)">إضافة للسلة</button>
+</section>
+
+<!-- فورم الطلب -->
+<section class="form">
+<h2>تأكيد الطلب</h2>
+
+<input id="name" placeholder="اسمك">
+<input id="phone" placeholder="رقمك">
+<input id="address" placeholder="عنوانك">
+
+<button onclick="sendOrder()">تأكيد الطلب</button>
+</section>
+
+<!-- السلة -->
+<div id="cart">
+<h3>السلة</h3>
+<div id="cart-items"></div>
+<p>الإجمالي: <span id="total">0</span></p>
+</div>
+
+<!-- الفوتر -->
+<footer>
+<p>© NEXT 2026</p>
+<p>مسؤول التطوير: Hager</p>
+<p>01223367009</p>
+
+<a href="https://wa.me/201223367009" class="whatsapp-btn">واتساب 💬</a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
